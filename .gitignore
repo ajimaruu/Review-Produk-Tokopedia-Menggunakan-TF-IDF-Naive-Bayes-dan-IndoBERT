@@ -1,0 +1,52 @@
+# --- Python ---
+# Virtual environment (Sangat penting!)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- Machine Learning / Data ---
+# Model files (Hindari push model besar ke GitHub)
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+# Data mentah atau hasil preprocessing yang besar
+data/processed/
+data/raw/
+*.csv
+*.tsv
+!requirements.txt  # Jangan abaikan requirements.txt
+models/bert/
+models/checkpoints/
+
+# --- Logs & Temp ---
+*.log
+tmp_trainer/
+reports/app.log
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
