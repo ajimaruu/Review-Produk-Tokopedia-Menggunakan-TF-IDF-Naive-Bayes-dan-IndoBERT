@@ -6,10 +6,15 @@ import pandas as pd
 from pathlib import Path
 
 from transformers import pipeline
-
+import nltk
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from nltk.corpus import stopwords
-
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
+    
+nltk.download("stopwords")
 stop_words = set(stopwords.words("indonesian"))
 
 import logging
